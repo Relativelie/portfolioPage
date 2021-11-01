@@ -661,8 +661,10 @@ body {
     }
 
     .cardItemInside {
-        margin-left: 8%;
         transform: none;
+    }
+
+    .cardItemInsideElem  {
         border-radius: 50%;
         background-color:rgba(96, 67, 122, 0.384);
         border: 1px solid white;
