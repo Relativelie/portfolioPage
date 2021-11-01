@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+}
+
+.mySvg {
+    position: relative;
+}
+
+.mySvg svg {
+    position: absolute;
+    top: -380px;
+}
+
+.path {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 150;
+    animation: mywave 2.5s linear infinite alternate;
+    stroke-width: 1.5;
+}
+
+@keyframes mywave {
+    from {
+        stroke-dashoffset: 40;
+    }
+    to {
+        stroke-dashoffset: 200;
+    }
+}
+
+#about:hover + #aboutSvg {
+    opacity: 1;
+}
+
+#portfolio:hover + #portfolioSvg {
+    opacity: 1;
+}
+
+#contact:hover + #contactSvg {
+    opacity: 1;
+}
+
+#contactSvg {
+    right: 10.5%;
+}
+
+#aboutSvg {
+    right: 30%;
+}
+
+#portfolioSvg {
+    right: 1.5%;
+}
+
+.mytextDecorationBlock {
+    top: -10px;
+    position: relative;
+}
+
+#portfolioSvg, #contactSvg, #aboutSvg {
+    opacity: 0;
+}
+
+.mySvgForText {
+    position: absolute;
+    width: 140px;
+}
+
+.menuItemHeader {
+    z-index: 3;
+    cursor: pointer;
+}
+
+.headBlock {
+    background-image: url("images/785.jpg");
+    background-position: bottom;
+    background-size: cover;
+}
+
+.headText {
+    width: 100%;
+    height: 600px;
+}
+
+
+.menuItem h3 {
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+}
+
+.menuItems {
+    display: flex;
+}
+
+.menuItem {
+    padding: 5px;
+    margin: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.aboutMeBlock {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+
+}
+
+
+/* ABOUT ME */
+.aboutMeItem h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+.aboutMeItem p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 30px;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+.tail {
+    animation: fishTail .1s linear infinite alternate;
+    
+    height: 30px;
+    position: absolute;
+}
+
+
+.myFish {
+    position: relative;
+    top: -60px;
+    display: flex;
+    align-items: center;
+    animation: fishBodyMove 2s linear infinite alternate;
+}
+
+.fishPosition {
+    position: relative;
+}
+
+.fishThing {
+    position: absolute;
+    top: 230px;
+    right: 10px;
+}
+
+.fishBlock {
+    position: relative;
+}
+
+.circleForFishThing {
+    width: 610px;
+    height: 610px;
+    position: absolute;
+    background-color: inherit;
+    bottom: 20px;
+    left: 150px;
+    transform: rotate(-45grad);
+}
+
+.fishing {
+    animation: fishThing 1.5s ease-in-out;
+}
+
+@keyframes fishThing {
+    0% {
+        transform: rotate(-45grad);
+    }
+
+    100% {
+        transform: rotate(180grad);
+    }
+} 
+
+.fishThing img {
+    height: 340px;
+}
+
+.fishMove {
+    animation: fishMove 3s linear;
+    right: -300px;
+}
+
+.caughtFish {
+    animation: caughtFish .5s linear ;
+}
+
+
+.fishBeing {
+    height: 70px;
+    margin-left: 10px;
+}
+
+.scaryFish {
+    animation: scaryFish .1s linear infinite alternate;
+}
+
+@keyframes scaryFish  {
+    from {
+        transform: rotate(1grad);
+    }
+    to {
+        transform: rotate(-1grad);
+    }
+}
+
+@keyframes caughtFish {
+    0% {
+        top: 0;
+        right: -300px;
+        scale: 1;
+    }
+
+    50% {
+        scale: 2;
+    }
+
+    100% {
+        top: -500px;
+        scale: 1;
+        right: 40px;
+    }
+}
+
+@keyframes fishMove {
+    from {
+        right: 0;
+    }
+    to {
+        right: -300px;
+    }
+}
+
+@keyframes fishBodyMove {
+    from {
+        transform: rotate(5grad);
+    }
+    to {
+        transform: rotate(-5grad);
+    }
+}
+
+@keyframes fishTail {
+    from {
+        transform: rotate(10grad);
+    }
+    to {
+        transform: rotate(-10grad);
+    }
+}
+
+.greetengCardBlock {
+    padding: 20px;
+    width: 600px;
+    height: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    backdrop-filter: invert(100%);
+    -webkit-backdrop-filter: invert(100%);
+}
+
+.greetengCardContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.greetengCardBlock h2 {
+    font-size: 70px;
+    margin: 0 0 20px 0;
+    font-family: 'Permanent Marker', cursive;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+.greetengText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.backpacker {
+    width: 290px;
+    position: absolute;
+    left: -140px;
+}
+.plants {
+    width: 600px;
+    height: 265px;
+    left: 20px;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+.backpackerImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.greetengCardBlock p {
+    font-size: 35px;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+.cardItemElem img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.cardItemElem p {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+}
+
+.gitIcon {
+    width: 90px !important;
+}
+
+.cardItemElem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 15%;
+}
+
+.cardItem {
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 2px 10px rgb(255, 0, 191), inset 0 2px 10px white;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(50grad);
+}
+
+.cardItemInside {
+    transform: rotate(-50grad);
+
+}
+
+.cardItem h3{
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.aboutCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBeing {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.aboutCardBlock {
+    margin-top: 7%;
+    background-image: url("images/tropical.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 3px 20px black, inset 0 20px 50px black, 0 3px 20px black;
+    padding: 50px;
+    height: 550px;
+}
+
+.aboutCard h2 {
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    font-size: 60px;
+    margin: 0 0 40% 0;
+}
+
+.emptySkill {
+    margin-left: -15%;
+}
+
+.contact {
+    height: 100px;
+}
+
+.contact h2 {
+
+}
+
+.portfolioItem {
+    height: 270px;
+    width: 400px;
+    border-radius: 20px;
+    margin: 20px
+}
+
+.backgroundVideo {
+    height: 270px;
+    width: 400px;
+    position: absolute;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.portfolioVideo {
+    position: relative;
+    z-index: -1;
+}
+
+.textOnPortfolio {
+    background-color: rgba(29, 9, 47, 0.966);
+    /* background-color: rgba(137, 43, 226, 0.219); */
+    height: 270px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1s ease;
+}
+
+.textOnPortfolio:hover {
+    background-color: rgba(137, 43, 226, 0.219);
+}
+
+
+.textOnPortfolio p {
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.textOnPortfolio button {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+}
