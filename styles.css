@@ -280,7 +280,7 @@ body {
 .greetengCardContainer {
     display: flex;
     justify-content: center;
-
+    margin-top: 50px;
 }
 
 .greetengCardBlock h2 {
@@ -663,15 +663,16 @@ body {
     .cardItemInside {
         margin-left: 8%;
         transform: none;
+        border-radius: 50%;
+        background-color:rgba(96, 67, 122, 0.384);
+        border: 1px solid white;
+        padding: 15px;
+        margin: 5px;
     }
 
     .cardItemInside h3 {
         text-align: center;
         font-size: 25px;
-        border: 1px solid white;
-        padding: 10px;
-        border-radius: 50%;
-        background-color:rgba(96, 67, 122, 0.384)
     }
     .cardItem {
         border: none;
@@ -709,12 +710,13 @@ body {
     .footer {
         margin-top: 20%;
     }
-}
 
-@media all and (max-width: 700px) {
     .menuItemHeader a {
         font-size: 15px
     }
+}
+
+@media all and (max-width: 700px) {
 
     .aboutMeBlock {
         align-items: flex-start;
