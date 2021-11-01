@@ -40,15 +40,15 @@ body {
 }
 
 #contactSvg {
-    right: 10.5%;
+    right: -10.5%;
 }
 
 #aboutSvg {
-    right: 30%;
+    right: 5%;
 }
 
 #portfolioSvg {
-    right: 1.5%;
+    right: -10%;
 }
 
 .mytextDecorationBlock {
@@ -70,21 +70,24 @@ body {
     cursor: pointer;
 }
 
+.menuItemHeader a {
+    text-decoration: none;
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    color: white;
+}
+
 .headBlock {
-    background-image: url("images/785.jpg");
+    background-image: url("images/background.jpg");
     background-position: bottom;
     background-size: cover;
+    overflow: hidden;
 }
 
 .headText {
     width: 100%;
     height: 600px;
-}
-
-
-.menuItem h3 {
-    margin: 0;
-    font-family: 'Permanent Marker', cursive;
 }
 
 .menu {
@@ -135,7 +138,6 @@ body {
 
 .tail {
     animation: fishTail .1s linear infinite alternate;
-    
     height: 30px;
     position: absolute;
 }
@@ -272,13 +274,13 @@ body {
     flex-direction: column;
     justify-content: center;
     z-index: 2;
-    backdrop-filter: invert(100%);
-    -webkit-backdrop-filter: invert(100%);
 }
+
 
 .greetengCardContainer {
     display: flex;
     justify-content: center;
+
 }
 
 .greetengCardBlock h2 {
@@ -297,11 +299,25 @@ body {
     justify-content: center;
 }
 
-.backpacker {
-    width: 290px;
+.backpackerBeing {
     position: absolute;
     left: -140px;
+    top: 15px;
 }
+.backpackerOne {
+    width: 122.7px;
+    position: absolute;
+    left: 158px;
+    filter: invert(100%);
+    -webkit-filter: invert(140%);
+}
+
+.backpackerTwo {
+    width: 140px;
+    position: absolute;
+    left: 20px;
+}
+
 .plants {
     width: 600px;
     height: 265px;
@@ -309,6 +325,8 @@ body {
     position: absolute;
     z-index: -1;
     overflow: hidden;
+    filter: invert(100%);
+    -webkit-filter: invert(140%);
 }
 .backpackerImage {
     position: relative;
@@ -385,6 +403,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .aboutCardBlock {
@@ -395,28 +414,24 @@ body {
     box-shadow: 0 3px 20px black, inset 0 20px 50px black, 0 3px 20px black;
     padding: 50px;
     height: 550px;
+    overflow: hidden;
+}
+.aboutCard h2 {
+    margin: 0 0 40% 0;
 }
 
-.aboutCard h2 {
-    font-family: 'Indie Flower', cursive;
+.aboutCard h2, .portfolioHeader h2, .contactHeader h2 {
     color: #fff;
     font-family: 'Permanent Marker', cursive;
     text-shadow: 0 3px 10px rgb(0, 0, 0);
     font-size: 60px;
-    margin: 0 0 40% 0;
+    text-align: center;
 }
 
 .emptySkill {
     margin-left: -15%;
 }
 
-.contact {
-    height: 100px;
-}
-
-.contact h2 {
-
-}
 
 .portfolioItem {
     height: 270px;
@@ -425,11 +440,6 @@ body {
     margin: 20px
 }
 
-.backgroundVideo {
-    height: 270px;
-    width: 400px;
-    position: absolute;
-}
 
 .portfolio {
     display: flex;
@@ -438,13 +448,10 @@ body {
 }
 
 
-.portfolioVideo {
-    position: relative;
-    z-index: -1;
-}
+
 
 .textOnPortfolio {
-    background-color: rgba(29, 9, 47, 0.966);
+    background-color: rgba(29, 9, 47, 0.836);
     /* background-color: rgba(137, 43, 226, 0.219); */
     height: 270px;
     width: 400px;
@@ -452,11 +459,40 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background-color 1s ease;
+    transition: background-color .5s ease;
 }
 
+.myVideo {
+    height: 270px;
+    width: 400px;
+    position: absolute;
+    background-color: aqua;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
 .textOnPortfolio:hover {
-    background-color: rgba(137, 43, 226, 0.219);
+    background-color: rgba(29, 9, 47, 0.267);
+}
+
+.videoOneText{
+    background-image: url("images/siteOne.gif");
+}
+
+.videoTwoText{
+    background-image: url("images/siteTwo.gif");
+}
+
+.videoThreeText {
+    background-image: url("images/siteThree.gif");
+}
+
+.videoFourText {
+    background-image: url("images/siteFour.gif");
+}
+
+.videoFiveText {
+    background-image: url("images/siteFive.gif");
 }
 
 
@@ -478,4 +514,412 @@ body {
     font-size: 30px;
     border-radius: 20px;
     border: none;
+    margin-top: 20px;
+}
+
+.contact img {
+    width: 50px;
+    box-shadow: 0 0 10px rgb(106, 42, 165);
+    border-radius: 11px;
+    margin-left: 10px;
+    transition: box-shadow 1s ease;
+}
+
+.contact img:hover {
+    box-shadow: 0 0 10px rgb(246, 222, 5);
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.contact h2 {
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+.contactBackground {
+    position: relative;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    transform: rotate(45grad);
+    position: absolute;
+    z-index: -1;
+}
+
+.circleTwo {
+    box-shadow: 0 3px 10px rgba(255, 203, 134, 0.692);
+    background-color: rgba(150, 0, 187, 0.151);
+    left: -290px;
+    top: -80px;
+}
+
+.circleThree {
+    background-color: rgba(29, 147, 202, 0.246);
+    box-shadow: 0 3px 10px rgba(255, 203, 134, 0.692);
+    left: -320px;
+    top: -130px;
+}
+
+
+.circleOne {
+    left: -340px;
+    top:  -80px;
+    box-shadow: 0 3px 10px rgba(150, 0, 187, 0.459);
+    background-color: rgba(251, 249, 152, 0.205);
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 2, 51);
+    height: 100px;
+}
+
+.footer p {
+    font-size: 30px;
+    font-family: 'Indie Flower', cursive;
+    color: #fff;
+    text-shadow: 0 3px 10px rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+@media all and (max-width: 1715px) {
+    .mySvg svg {
+        top: -350px;
+    }
+}
+
+@media all and (max-width: 1600px) {
+    .mySvg svg {
+        top: -310px;
+    }
+
+    .headText {
+        height: 450px;
+    }
+
+    .greetengCardContainer {
+        margin-top: 50px;
+    }
+}
+
+
+@media all and (max-width: 1400px) {
+    .mySvg svg {
+        top: -260px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .mySvg svg {
+        top: -200px;
+    }
+}
+
+
+@media all and (max-width: 1000px) {
+
+    .headText {
+        height: 350px;
+    }
+
+    .mySvg svg {
+        top: -150px;
+    }
+
+    .cardItemElem p {
+        font-size: 30px;
+    }
+
+    .cardItemElem img {
+        width: 30px;
+    }
+
+    .gitIcon {
+        width: 50px !important;
+    }
+
+    .cardItemElem {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardItemInside {
+        margin-left: 8%;
+        transform: none;
+    }
+
+    .cardItemInside h3 {
+        text-align: center;
+        font-size: 25px;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 50%;
+        background-color:rgba(96, 67, 122, 0.384)
+    }
+    .cardItem {
+        border: none;
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        transform: none;
+    } 
+
+    .cardItemElem img {
+        display: none;
+    }
+
+    .cardItemElem {
+        margin-left: 0%;
+        width: 200px;
+    }
+
+    .emptySkill {
+        margin-left: 0%;
+    }
+
+    .aboutCardBlock {
+        height: fit-content;
+    }
+
+    .aboutCard h2, .portfolioHeader h2, .contactHeader h2 {
+        font-size: 40px;
+    }
+
+    .contact {
+        margin-top: 15%;
+    }
+
+    .footer {
+        margin-top: 20%;
+    }
+}
+
+@media all and (max-width: 700px) {
+    .menuItemHeader a {
+        font-size: 15px
+    }
+
+    .aboutMeBlock {
+        align-items: flex-start;
+        margin-left: 8%;
+    }
+
+    .headText {
+        height: 300px;
+    }
+
+    .mySvg svg {
+        top: -110px;
+    }
+
+    .greetengCardBlock, .plants {
+        width: 400px;
+        height: 300px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .footer {
+        margin-top: 40%;
+    }
+
+    .contact {
+        margin-top: 20%;
+    }
+}
+
+
+@media all and (max-width: 500px)  {
+    .headText {
+        height: 200px;
+    }
+
+    .mySvg svg {
+        top: -80px;
+    }
+
+    .aboutMeItem h1 {
+        font-size: 20px;
+    }
+
+    .aboutMeItem p {
+        font-size: 15px;
+    }
+
+    .aboutMeBlock {
+    justify-content: flex-start;
+    }
+
+    .fishBeing {
+        height: 30px;
+        margin-left: 3px;
+    }
+
+    .tail {
+        height: 10px;
+    } 
+
+    .circleForFishThing {
+        width: 310px;
+        height: 310px;
+        left: 80px
+    }
+
+    .fishThing img {
+        height: 170px;
+    }
+
+    .fishThing {
+        top: 130px
+    }
+
+    .myFish {
+        top: -30px;
+    }
+
+    @keyframes fishMove {
+        from {
+            right: 0;
+        }
+        to {
+            right: -150px;
+        }
+    }
+
+
+    @keyframes caughtFish {
+        0% {
+            top: 0;
+            right: -150px;
+            scale: 1;
+        }
+    
+        50% {
+            scale: 2;
+        }
+    
+        100% {
+            top: -500px;
+            scale: 1;
+            right: 40px;
+        }
+    }
+
+    .greetengCardBlock h2 {
+        font-size: 25px;
+    }
+
+    .greetengCardBlock p {
+        font-size: 20px;
+    }
+
+    .greetengCardBlock, .plants {
+        width: 300px;
+        height: 200px;
+    }
+
+    .greetengCardContainer {
+        margin-top: 0;
+    }
+
+    .backpackerTwo {
+        width: 80px;
+        top: 30px;
+        left: 80px;
+    }
+
+    .backpackerOne {
+        width: 70px;
+        top: 30px;
+        left: 160px;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .circleOne {
+        left: -30px;
+        top: -150px;
+    }
+    .circleTwo {
+        left: -90px;
+        top: -150px;
+    }
+    .circleThree {
+        left: -60px;
+        top: -200px;
+    }
+
+    .portfolioItem {
+        width: 300px;
+        margin: 0 0 20px 0;
+    }
+
+    .myVideo, .textOnPortfolio {
+        width: 300px;
+    }
+
+    .textOnPortfolio p, .textOnPortfolio button {
+        font-size: 20px;
+    }
+
+    .textOnPortfolio button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 360px)  {
+    .headText {
+        height: 150px;
+    }
+
+    .mySvg svg {
+        top: -55px;
+    }
+
+    .menu {
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .backpackerBeing {
+        display: none;
+    }
+
+    .greetengCardBlock, .plants {
+        width: 250px;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .plants {
+        left: 0;
+    }
 }

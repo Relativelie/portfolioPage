@@ -18,8 +18,15 @@ function showProfession() {
 
 
 document.querySelector(".fishPosition").onanimationend = () => {
+    let mySize = window.matchMedia('(max-width: 500px)');
     if ((Object.values(document.querySelector(".fishPosition").classList).indexOf("fishMove") != -1)) {
-        document.querySelector(".fishPosition").style.right = "-300px";
+        if (mySize.matches) {
+            document.querySelector(".fishPosition").style.right = "-150px";
+        }
+
+        else {
+            document.querySelector(".fishPosition").style.right = "-300px";
+        }
         document.querySelector(".fishPosition").classList.remove("fishMove");
         fishing() 
     }
@@ -40,10 +47,3 @@ document.querySelector(".circleForFishThing").onanimationend = () => {
     document.querySelector(".fishPosition").classList.remove("caughtFish");
     document.querySelector(".myFish").classList.remove("scaryFish");
 };
-
-let myVideos = [
-    "siteOne.mp4",
-    "siteThree.mp4",
-    "siteTwo.mp4"
-
-]

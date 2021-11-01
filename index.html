@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/officel/16/000000/fish.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,8 @@
                 <div class="menuItems">
                     <div class="menuItem">
                         <div class="menuItemHeader" id="about">
-                            <h3>Skills</h3>
+                            <a href="#skillsHeader">Skills</a>
+                            
                         </div>
 
                         <div class="mytextDecorationBlock" id="aboutSvg">
@@ -48,7 +50,7 @@
 
                 <div class="menuItem">
                     <div class="menuItemHeader" id="portfolio">
-                        <h3>Portfolio</h3>
+                        <a href="#portfolioHeader">Portfolio</a>
                     </div>
 
                     <div class="mytextDecorationBlock" id="portfolioSvg">
@@ -70,7 +72,7 @@
 
                 <div class="menuItem">
                     <div class="menuItemHeader" id="contact">
-                        <h3>Contact</h3>
+                        <a href="#contactHeader">Contact</a>
                     </div>
                     <div class="mytextDecorationBlock" id="contactSvg">
                         <svg class="mySvgForText" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 20">
@@ -130,25 +132,30 @@
     </div>
 
     </div>
+
     <div class="greetengCardContainer">
         <div class="backpackerImage">
-            <img class="backpacker" src="images/backpacker.png" alt="">
+            <div class="backpackerBeing">
+                <img class="backpackerOne" src="images/backpackerOne.png" alt="">
+                <img class="backpackerTwo" src="images/backpackerTwo.png" alt="">
+            </div>
             <img class="plants" src="images/plants.jpg" alt="">
         </div>
+
         <div class="greetengCardBlock">
             <div class="greetengText">
+
+
                 <h2>Hi, there</h2>
                 <p>At this moment I'm a junior front-end developer. However, I have been studying each day and it's not
                     the end of my way. I think we’ll be friends</p>
             </div>
-
-
         </div>
     </div>
 
     <div class="aboutCardBlock">
         <div class="aboutCard">
-            <div>
+            <div id="skillsHeader">
                 <h2>Skills</h2>
             </div>
             <div class="cardBeing">
@@ -202,86 +209,78 @@
         </div>
     </div>
 
-    <div class="portfolioHeader">
-<h2>Portfolio</h2>
+    <div class="portfolioHeader" id="portfolioHeader">
+        <h2>Portfolio</h2>
     </div>
     <div class="portfolio">
         <div class="portfolioItem">
-            <div class="portfolioVideo">
-                <video class="backgroundVideo videoOne" autoplay loop muted>
-                    <source src="images/siteOne.mp4" type="video/mp4">
-                  </video>
+            <div class="myVideo videoOneText">
+
             </div>
-            <div class="textOnPortfolio videoOneText">
-                <p>There is you may calculate your mortgage</p>
+            <div class="textOnPortfolio">
+                <p>Mortgage Bank</p>
                 <a target="blank" href="https://mybank.glitch.me">
-                <button>Visit</button></a>
+                    <button>Visit</button></a>
             </div>
         </div>
 
         <div class="portfolioItem">
-            <div class="portfolioVideo">
-                <video class="backgroundVideo videoTwo" autoplay loop muted>
-                    <source src="images/siteTwo.mp4" type="video/mp4">
-                  </video>
-            </div>
+            <div class="myVideo videoTwoText">
 
-            <div class="textOnPortfolio videoTwoText">
-                <p>There is you may open account and do test</p>
+            </div>
+            <div class="textOnPortfolio ">
+                <p>Investment site</p>
                 <a target="blank" href="https://mybank.glitch.me/investments.html">
-                <button>Visit</button></a>
+                    <button>Visit</button></a>
             </div>
         </div>
 
         <div class="portfolioItem">
-            <div class="portfolioVideo">
-                <video class="backgroundVideo videoThree" autoplay loop muted>
-                    <source src="images/siteThree.mp4" type="video/mp4">
-                  </video>
+            <div class="myVideo videoThreeText">
+
             </div>
-            <div class="textOnPortfolio videoThreeText">
-                <p>There is you may choose food and add them to basket</p>
+            <div class="textOnPortfolio ">
+                <p>The cafe</p>
                 <a target="blank" href="https://acafe.glitch.me/">
-                <button>Visit</button></a>
+                    <button>Visit</button></a>
             </div>
         </div>
 
         <div class="portfolioItem">
+            <div class="myVideo videoFourText">
 
-            <div class="portfolioVideo videoFive">
-                <video class="backgroundVideo" autoplay loop muted>
-                    <source src="images/siteFour.mp4" type="video/mp4">
-                  </video>
             </div>
-
-            <div class="textOnPortfolio videoFourText">
-                <p>There is you may find out temperature on different city</p>
+            <div class="textOnPortfolio ">
+                <p>Forecast site</p>
                 <a target="blank" href="https://weather-forecast-project.glitch.me/">
-                <button>Visit</button></a>
+                    <button>Visit</button></a>
             </div>
 
         </div>
 
         <div class="portfolioItem">
-            <div class="portfolioVideo videoFive">
-                <video class="backgroundVideo" autoplay loop muted>
-                    <source src="images/siteFiveO.mp4" type="video/mp4">
-                  </video>
+            <div class="myVideo videoFiveText">
+
             </div>
-
-
-            <div class="textOnPortfolio videoFiveText">
-                <p>There is you may find holidays in different countries </p>
+            <div class="textOnPortfolio ">
+                <p>Countdown before holidays</p>
                 <a target="blank" href="https://lopsided-fortune-bowl.glitch.me/">
-                <button>Visit</button></a>
+                    <button>Visit</button></a>
             </div>
 
         </div>
     </div>
 
+    <div class="contactHeader" id="contactHeader">
+        <h2>Contact</h2>
+    </div>
     <div class="contact">
-        <div>
-            <h2>You may contact with me in telegram or with email</h2>
+        <h2>You may contact with me in</h2>
+        <a href="https://t.me/OnePunchOnBug"><img src="images/telega.png" alt=""></a>
+        <div class="contactBackground">
+            <div class="circle circleOne"></div>
+            <div class="circle circleTwo"></div>
+            <div class="circle circleThree"></div>
         </div>
     </div>
 
