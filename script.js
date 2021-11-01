@@ -47,3 +47,23 @@ document.querySelector(".circleForFishThing").onanimationend = () => {
     document.querySelector(".fishPosition").classList.remove("caughtFish");
     document.querySelector(".myFish").classList.remove("scaryFish");
 };
+
+
+
+
+
+let portfolio = document.querySelector(".portfolio")
+function showPortfolio() {
+    portfolio.style.marginTop = "20px";
+    }
+    
+
+
+let observer = new IntersectionObserver(function (e) {
+    if (e[0].isIntersecting === true) {
+        showPortfolio();
+        observer.disconnect();
+    }
+}, { threshold: [1] });
+
+observer.observe(document.querySelector(".portfolioHeader"));
