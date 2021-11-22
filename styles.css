@@ -757,6 +757,10 @@ body {
 
 @media all and (max-width: 700px) {
 
+    .mySvgForText {
+        width: 80px;
+    }
+
     .aboutMeBlock {
         align-items: flex-start;
         margin-left: 8%;
