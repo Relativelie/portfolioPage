@@ -3,8 +3,10 @@ const professionText = "ior front-end developer";
 
 let profession = document.querySelector(".profession p")
 
-showProfession();
+window.addEventListener("load", showProfession)
+
 function showProfession() {
+    document.querySelector(".waiting").style.display = "none";
     document.querySelector(".fishPosition").classList.add("fishMove")
     let i=0;
         let myInterval = setInterval(()=> {
