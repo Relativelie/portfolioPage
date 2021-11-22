@@ -347,7 +347,7 @@ body {
 
 
 .cardItemElem img {
-    width: 50px;
+    width: 40px;
     margin-right: 20px;
 }
 
@@ -366,7 +366,7 @@ body {
 .cardItemElem {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0;
     margin-left: 15%;
 }
 
@@ -494,6 +494,10 @@ body {
 
 .videoFiveText {
     background-image: url("images/siteFive.gif");
+}
+
+.videoSixText {
+    background-image: url("images/cartoonNetwork.gif");
 }
 
 
