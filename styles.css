@@ -363,6 +363,13 @@ body {
     width: 90px !important;
 }
 
+.githubIcon {
+    width: 50px;
+    padding: 10px;
+    transition: all .7s ease;
+    border-radius: 50%;
+}
+
 .cardItemElem {
     display: flex;
     align-items: center;
@@ -449,18 +456,28 @@ body {
     transition: all 1s ease;
 }
 
-
-
-
 .textOnPortfolio {
     background-color: rgba(29, 9, 47, 0.836);
     height: 270px;
     width: 400px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    transition: background-color .5s ease;
+}
+
+.textOnPortfolio > div {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background-color .5s ease;
+    margin-top: 8%;
+}
+
+.textOnPortfolio a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .myVideo {
@@ -474,6 +491,12 @@ body {
 }
 .textOnPortfolio:hover {
     background-color: rgba(29, 9, 47, 0.267);
+}
+
+.textOnPortfolio:hover .githubIcon {
+    background-color: rgb(224, 205, 255);
+
+    padding: 15px;
 }
 
 .videoOneText{
@@ -500,6 +523,9 @@ body {
     background-image: url("images/cartoonNetwork.gif");
 }
 
+.videoSevenText {
+    background-image: url("images/siteSeven.gif");
+}
 
 .textOnPortfolio p {
     margin: 0;
