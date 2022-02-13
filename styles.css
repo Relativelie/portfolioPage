@@ -527,6 +527,10 @@ body {
     background-image: url("images/siteSeven.gif");
 }
 
+.videoEightText{
+    background-image: url("images/siteEight.gif");
+}
+
 .textOnPortfolio p {
     margin: 0;
     font-family: 'Indie Flower', cursive;
