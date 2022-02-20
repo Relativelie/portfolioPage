@@ -79,7 +79,7 @@ body {
 }
 
 .headBlock {
-    background-image: url("images/background.jpg");
+    background-image: url("images/background.webp");
     background-position: bottom;
     background-size: cover;
     overflow: hidden;
@@ -415,7 +415,7 @@ body {
 
 .aboutCardBlock {
     margin-top: 7%;
-    background-image: url("images/tropical.jpg");
+    background-image: url("images/tropical.webp");
     background-position: center;
     background-size: cover;
     box-shadow: 0 3px 20px black, inset 0 20px 50px black, 0 3px 20px black;
@@ -497,38 +497,6 @@ body {
     background-color: rgb(224, 205, 255);
 
     padding: 15px;
-}
-
-.videoOneText{
-    background-image: url("images/siteOne.gif");
-}
-
-.videoTwoText{
-    background-image: url("images/siteTwo.gif");
-}
-
-.videoThreeText {
-    background-image: url("images/siteThree.gif");
-}
-
-.videoFourText {
-    background-image: url("images/siteFour.gif");
-}
-
-.videoFiveText {
-    background-image: url("images/siteFive.gif");
-}
-
-.videoSixText {
-    background-image: url("images/cartoonNetwork.gif");
-}
-
-.videoSevenText {
-    background-image: url("images/siteSeven.gif");
-}
-
-.videoEightText{
-    background-image: url("images/siteEight.gif");
 }
 
 .textOnPortfolio p {
