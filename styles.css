@@ -191,6 +191,7 @@ body {
 
 .fishThing img {
     height: 340px;
+    width: 100%;
 }
 
 .fishMove {
@@ -365,6 +366,7 @@ body {
 
 .githubIcon {
     width: 50px;
+    height: 100%;
     padding: 10px;
     transition: all .7s ease;
     border-radius: 50%;
@@ -463,7 +465,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: background-color .5s ease;
+    transition: background-color .2s ease;
 }
 
 .portfolioNameBtn {
@@ -495,7 +497,6 @@ body {
 
 .textOnPortfolio:hover .githubIcon {
     background-color: rgb(224, 205, 255);
-
     padding: 15px;
 }
 
@@ -522,6 +523,7 @@ body {
 
 .contact img {
     width: 50px;
+    height: 100%;
     box-shadow: 0 0 10px rgb(106, 42, 165);
     border-radius: 11px;
     margin-left: 10px;

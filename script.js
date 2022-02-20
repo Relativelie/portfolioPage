@@ -52,8 +52,6 @@ document.querySelector(".circleForFishThing").onanimationend = () => {
 
 
 
-
-
 let portfolio = document.querySelector(".portfolio")
 function showPortfolio() {
     portfolio.style.marginTop = "20px";
